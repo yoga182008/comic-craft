@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ comic.title }} — ComicCraft</title><link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<header class="topbar"><a href="/" class="brand">Comic<span>Craft</span></a><a href="/" class="small-button">New Comic</a></header>
+<main class="container wide">
+<section class="result-header"><span class="badge">YOUR COMIC IS READY</span>
+<h1>{{ comic.title }}</h1><p>{{ comic.request.story_prompt }}</p>
+<a class="primary inline" href="{{ comic.pdf_url }}" download>⬇ Download PDF</a></section>
+<section class="comic-grid">
+{% for panel in comic.panels %}
+<article class="panel"><div class="panel-number">PANEL {{ panel.panel_number }}</div>
+<h2>{{ panel.title }}</h2><img src="{{ panel.image_url }}" alt="{{ panel.title }}">
+<p class="scene"><em>{{ panel.scene_description }}</em></p>
+<div class="caption">{{ panel.narration }}</div><div class="dialogue">{{ panel.dialogue }}</div>
+</article>
+{% endfor %}
+</section>
+<div class="bottom-actions"><a class="primary inline" href="{{ comic.pdf_url }}" download>Download Comic PDF</a>
+<a class="secondary" href="/">Create Another Comic</a></div>
+</main></body></html>

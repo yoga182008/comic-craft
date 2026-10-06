@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComicCraft — AI Comic Creator</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<header class="hero"><div class="hero-inner">
+<span class="badge">AI STORY STUDIO</span>
+<h1>Comic<span>Craft</span></h1>
+<p>Turn one idea into a five-panel illustrated comic.</p>
+</div></header>
+<main class="container"><section class="card">
+<div class="section-heading"><h2>Create your comic</h2><p>Describe the world and let the AI build the story panel by panel.</p></div>
+<form id="comic-form" action="/generate" method="post">
+<label for="story_prompt">Story Prompt</label>
+<textarea id="story_prompt" name="story_prompt" required minlength="5" placeholder="A young inventor discovers a tiny robot hiding in her school backpack..."></textarea>
+<div class="grid">
+<div><label for="character_name">Main Character Name</label><input id="character_name" name="character_name" required placeholder="Maya"></div>
+<div><label for="setting">Setting</label><select id="setting" name="setting"><option>School</option><option>Forest</option><option>Space</option><option>City</option></select></div>
+<div><label for="tone">Story Tone</label><select id="tone" name="tone"><option>Light-hearted</option><option>Dramatic</option><option>Poetic</option><option>Funny</option></select></div>
+<div><label for="art_style">Art Style</label><select id="art_style" name="art_style"><option>Anime</option><option>Pixel Art</option><option>Comic Book</option><option>Realistic</option></select></div>
+</div>
+<button class="primary" type="submit" id="generate-btn"><span>✨ Generate Comic</span></button>
+<p id="loading" class="loading hidden">Creating your five-panel comic…</p>
+</form></section></main>
+<script src="/static/js/app.js"></script>
+</body></html>

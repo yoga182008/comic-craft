@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+<rect width="900" height="600" fill="#f7efe1"/>
+<rect x="25" y="25" width="850" height="550" rx="18" fill="white" stroke="#171717" stroke-width="8"/>
+<circle cx="450" cy="270" r="125" fill="#ffd166" stroke="#171717" stroke-width="7"/>
+<circle cx="405" cy="245" r="13" fill="#171717"/>
+<circle cx="495" cy="245" r="13" fill="#171717"/>
+<path d="M390 315 Q450 355 510 315" fill="none" stroke="#171717" stroke-width="8"/>
+<text x="450" y="90" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700">A Strange Clue</text>
+<text x="450" y="500" text-anchor="middle" font-family="Arial" font-size="18">Anime comic panel, School, main character maya, maya finds a clue connected to the problem., expressive cinematic composition, consistent character design, no text</text>
+<text x="450" y="545" text-anchor="middle" font-family="Arial" font-size="16">ComicCraft fallback illustration — panel 2</text>
+</svg>
